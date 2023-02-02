@@ -1,0 +1,150 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c6d7eb;
+    font-family: 'Century Gothic' ,'Baskerville Old Face', 'Poppins', Consolas, 'Courier New', monospace;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.card-login {
+    width: 500px;
+    height: 525px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 50px;
+    margin: 20px 0 20px 400px;
+    align-items: center;
+}
+
+.card-login h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-img-top1 {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.left-content {
+    text-align: center;
+    line-height: 100px;
+    width: 350px;
+    height: 520px;
+    background-color: #fff;
+    float: left;
+    padding: 50px 20px 20px 20px;
+    margin: 25px 50px 0 125px;
+}
+
+.center-content {
+    text-align: center;
+    line-height: 100px;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    color: #000;
+    float: left;
+    padding: 20px;
+    margin: 25px 20px 20px 20px;
+}
+
+.center-konten {
+    text-align: center;
+    line-height: 100px;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    color: #000;
+    float: left;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+}
+
+.right-content {
+    text-align: center;
+    line-height: 400px;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    color: #000;
+    float: left;
+    padding: 20px;
+    margin: 25px 0 20px 0;
+}
+
+.right-konten {
+    text-align: center;
+    line-height: 400px;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    color: #000;
+    float: left;
+    padding: 20px;
+    margin: 0 0 0 0;
+}
+
+.logo{
+    width: 200px; 
+    height: 200px;
+    padding: 20px;
+}
+
+.input-control{
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.site_content
+{
+    width: 60%;
+    height: 100%;
+    color: #fff;
+}
+
+footer {
+    padding: 20px;
+    color: #faa65e;
+    background-color: #3b3c5a;
+    text-align: center;
+    font-weight: bold;
+    overflow: auto;
+}
