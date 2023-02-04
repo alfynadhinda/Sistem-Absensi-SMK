@@ -8,6 +8,10 @@
 
     $kelas = query ("SELECT * FROM siarota_kelas");
     $guru = query("SELECT * FROM siarota_guru");
+    $kelass = query ("SELECT siarota_kelas.`kd_kelas`, siarota_kelas.`nama_kelas`, siarota_kelas.`wali_kelas`,
+                    siarota_guru.`nik_guru`, siarota_guru.`nama_guru`
+                    FROM siarota_kelas
+                    JOIN siarota_guru on siarota_kelas.`wali_kelas` = siarota_guru.`nik_guru`");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -157,7 +161,7 @@
                     <?php
                       foreach ($guru as $row) :
                     ?>
-                    <option value="<?= $row['nik_guru']?>"><?= $row['nik_guru']?></option>
+                    <option value="<?= $row['nik_guru']?>"><?= $row['nama_guru']?></option>
                     <?php
                     endforeach
                     ?>
@@ -179,20 +183,20 @@
             <th scope="col">No</th>
             <th scope="col">Kode Kelas</th>
             <th scope="col">Nama Kelas</th>
-            <th scope="col">Wali Kelas (Kode Guru)</th>
+            <th scope="col">Wali Kelas</th>
             <th scope="col">Action</th>
           </tr>
           </thead>
           <tbody>
           <?php $i=1; ?>
           <?php
-             foreach ($kelas as $row) :
+             foreach ($kelass as $row) :
           ?>
             <tr>
               <th scope="row"><?= $i; ?></th>
               <td><?= $row['kd_kelas']?></td>
               <td><?= $row['nama_kelas']?></td>
-              <td><?= $row['wali_kelas']?></td>
+              <td><?= $row['nama_guru']?></td>
               <td>
                   <a href="edit_kelas.php?kode_kelas=<?= $row['kd_kelas']?>" type="button" class="btn btn-warning btn-sm">
                     <i class="bi bi-pencil-square"></i>

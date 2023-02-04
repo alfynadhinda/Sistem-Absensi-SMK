@@ -234,12 +234,19 @@
                 <div class="p-3 mb-2 mt-1 pb-0">
                 <table class="table table-borderless">
                     <tbody>
+                    <tr class="center">
+                        <th class="text-center">No</th>
+                        <th class="text-center">Pengumuman</th>
+                        <th class="text-center">Update terakhir</th>
+                    </tr>
                     <?php $i=1; ?>
                     <?php
                     foreach ($pengumuman as $row) :
                     ?>
                     <tr>
+                        <td class="text-center"><?= $i; ?></td>
                         <td><?= $row['pengumuman']?></td>
+                        <td class="text-center"><?= $row['tanggal']?></td>
                     </tr>
                     <?php $i++; ?>
                     <?php endforeach; ?>

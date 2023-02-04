@@ -134,9 +134,10 @@
 
         $id_pengumuman = $_POST['id_pengumuman'];
         $pengumuman = $_POST['pengumuman'];
+        $tanggal = date('Y-m-d H:i:s');
 
         $insert_pengumuman = "INSERT INTO siarota_pengumuman VALUES  
-                  ('$id_pengumuman','$pengumuman')";
+                  ('$id_pengumuman','$pengumuman','$tanggal.CURDATE()')";
         mysqli_query($connect,$insert_pengumuman);
         return mysqli_affected_rows($connect);
     }

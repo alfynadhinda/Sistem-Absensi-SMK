@@ -21,7 +21,12 @@
             header("location:guru/");
         }
         else {
-            header("location:index.php?pesan:gagal");
+            // header("location:index.php?pesan:gagal");
+            echo "
+                <script>
+                alert('Username atau password salah');
+                document.location='index.php?gagal';
+                </script>";
         }
     }
     elseif ($lvl == 'admin'){
@@ -37,7 +42,12 @@
             header("location:admin/");
         }
         else {
-            header("location:index.php?gagal login");
+            // header("location:index.php?gagal login");
+            echo "
+                <script>
+                alert('Username atau password salah');
+                document.location='index.php?gagal';
+                </script>";
         }
     }
     elseif ($lvl == 'siswa') {
@@ -54,10 +64,20 @@
             header("location:siswa/");
         }
         else{
-            header("location:index.php?pesan:gagal");
+            // header("location:index.php?pesan:gagal");
+            echo "
+                <script>
+                alert('Username atau password salah');
+                document.location='index.php?gagal';
+                </script>";
         }
     }
     else {
-        header("location:index.php?pesan:gagal");
+        // header("location:index.php?pesan:gagal");
+        echo "
+                <script>
+                alert('Username atau password salah');
+                document.location='index.php?gagal';
+                </script>";
     }
 ?>

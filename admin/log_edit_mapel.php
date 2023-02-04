@@ -10,7 +10,7 @@
 
       $update = "UPDATE siarota_mapel SET 
               kd_mapel  = '$kd_mapel', 
-              nama_mapel = '$nama_mapel', 
+              nama_mapel = '$nama_mapel' 
               WHERE kd_mapel = '$kd_mapel' ";
         $query = mysqli_query($connect, $update);
       
@@ -18,14 +18,14 @@
         if($query){
             echo "
               <script>
-              alert('Daftar Matapelajaran Berhasil diupdate');
+              alert('Daftar Mata Pelajaran Berhasil diupdate');
               document.location='data_mapel.php?status=sukses';
               </script>";
           }
           else{
             echo "
               <script>
-              alert('Daftar Matapelajaran Gagal diupdate');
+              alert('Daftar Mata Pelajaran Gagal diupdate');
               document.location='data_mapel.php?status=gagal';
               </script>";
           }

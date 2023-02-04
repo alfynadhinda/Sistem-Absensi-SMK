@@ -74,7 +74,7 @@
                                 Rekap Data
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Absensi Siswa</a></li>
+                                <li><a class="dropdown-item" href="rekap_kehadiran.php">Absensi Siswa</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -88,7 +88,7 @@
                             <div class="dropdown-item fw-bold text-uppercase ps-3">
                                 <?php echo $_SESSION['nama_admin']; ?>
                             </div>
-                            <li><a class="dropdown-item bi bi-person-fill" href="#profil.php"> Profile</a></li>
+                            <li><a class="dropdown-item bi bi-person-fill" href="profil.php"> Profile</a></li>
                             <li><a class="dropdown-item bi bi-power" href="../exit.php"> Logout</a></li>
                         </ul>
                     </li>

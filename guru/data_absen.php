@@ -130,7 +130,7 @@
                     </div>
                     <div class="mb-1 col-5">
                         <select id="kelas_siswa" name="kelas_siswa" class="form-select" aria-label="Default select example">
-                            <option selected>Cari Kode Kelas</option>
+                            <option selected>Cari Kelas</option>
                             <?php
                                 foreach ($mapel as $row) :
                             ?>

@@ -151,6 +151,7 @@
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Pengumuman</th>
+                    <th scope="col">Update terakhir</th>
                     <th scope="col">Action</th>
                 </tr>
                 </thead>
@@ -162,6 +163,7 @@
                     <tr class="align-middle">
                     <th scope="row" class="text-center"><?= $i; ?></th>
                     <td><?= $row['pengumuman'] ?></td>
+                    <td class="text-center"><?= $row['tanggal'] ?></td>
                     <td class="text-center">
                         <a href="hapus_pengumuman.php?id_pengumuman=<?= $row['id_pengumuman']?>" onclick="return confirm('Apakah Anda ingin menghapus data ini ?')" type="button" class="btn btn-danger btn-sm">
                         <i class="bi bi-trash3-fill"></i>
@@ -217,7 +219,6 @@
                                     <label for="Pengumuman" class="form-label">Pengumuman</label>
                                     <input type="text" class="form-control" id="pengumuman" name="pengumuman" aria-describedby="pengumuman" placeholder="Tulis Pengumuman" required>
                                 </div>
-                                
                                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
