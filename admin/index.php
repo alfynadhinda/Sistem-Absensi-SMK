@@ -11,7 +11,7 @@
     $siswa = mysqli_query($koneksi, "SELECT * FROM siarota_siswa");
     $jumlah_guru = mysqli_num_rows($guru);
     $jumlah_siswa = mysqli_num_rows($siswa);
-    $pengumuman = mysqli_query($koneksi,"SELECT * FROM siarota_pengumuman");
+    $pengumuman = mysqli_query($koneksi,"SELECT * FROM siarota_pengumuman ORDER BY tanggal DESC");
 ?>
 <!DOCTYPE html>
 <html lang="en">

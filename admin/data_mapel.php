@@ -162,7 +162,7 @@
         <table class="table text-center table-bordered table-striped table-hover">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Kode Mata Pelajaran</th>
+            <!-- <th scope="col">Kode Mata Pelajaran</th> -->
             <th scope="col">Nama Mata Pelajaran</th>
             <th scope="col">Action</th>
           </tr>
@@ -174,7 +174,7 @@
           ?>
             <tr>
               <th scope="row"><?= $i; ?></th>
-              <td><?= $row['kd_mapel']?></td>
+              <!-- <td><?= $row['kd_mapel']?></td> -->
               <td><?= $row['nama_mapel']?></td>
               <td>
                 <a href="edit_mapel.php?kd_mapel=<?= $row['kd_mapel']?>" type="button" class="btn btn-warning btn-sm" >

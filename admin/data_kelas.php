@@ -181,7 +181,7 @@
         <table class="table text-center align-middle table-bordered table-striped table-hover">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Kode Kelas</th>
+            <!-- <th scope="col">Kode Kelas</th> -->
             <th scope="col">Nama Kelas</th>
             <th scope="col">Wali Kelas</th>
             <th scope="col">Action</th>
@@ -194,7 +194,7 @@
           ?>
             <tr>
               <th scope="row"><?= $i; ?></th>
-              <td><?= $row['kd_kelas']?></td>
+              <!-- <td><?= $row['kd_kelas']?></td> -->
               <td><?= $row['nama_kelas']?></td>
               <td><?= $row['nama_guru']?></td>
               <td>
